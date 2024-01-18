@@ -11,9 +11,7 @@ export const getImagesPage = async (pageNum: number, query: string | null) => {
     URL = `${mainUrl}?&page=${pageNum}&per_page=${photosPerPage}`;
   }
   const response = await fetch(URL, {
-    headers: {
-      Authorization: "MsEvFlyWRgzqDkHeVMT1owlaUlSTDfN706pnfj6ZRgZmmTpVQ66VIvpb",
-    },
+    headers: { Authorization: process.env.REACT_APP_KEY! },
   });
 
   if (!response.ok) {
