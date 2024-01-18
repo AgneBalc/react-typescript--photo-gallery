@@ -14,7 +14,6 @@ module.exports = {
       template: "./public/index.html",
     }),
     new Dotenv({
-      path: `${environmentsPath}/.env`,
       systemvars: true,
     }),
   ],
