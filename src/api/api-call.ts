@@ -1,5 +1,3 @@
-import REACT_APP_KEY from "../../config";
-
 const mainUrl = "https://api.pexels.com/v1/curated";
 const searchUrl = "https://api.pexels.com/v1/search";
 const photosPerPage = 15;
@@ -13,7 +11,7 @@ export const getImagesPage = async (pageNum: number, query: string | null) => {
     URL = `${mainUrl}?&page=${pageNum}&per_page=${photosPerPage}`;
   }
   const response = await fetch(URL, {
-    headers: { Authorization: REACT_APP_KEY },
+    headers: { Authorization: process.env.REACT_APP_KEY! },
   });
 
   if (!response.ok) {
