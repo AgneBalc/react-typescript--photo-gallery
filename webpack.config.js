@@ -13,7 +13,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
-    new Dotenv(),
+    new Dotenv({
+      path: `${environmentsPath}/.env`,
+      systemvars: true,
+    }),
   ],
   resolve: {
     extensions: ["*", ".js", ".jsx", ".tsx", ".ts"],
