@@ -2,7 +2,16 @@
 
 A web application for displaying and searching photos using the Pexels API. It allows users to search for photos by keywords and view an infinite scroll of results. Users can also favorite photos, and the application saves their favorites in local storage.
 
-## Technologies Used
+### Screenshot
+
+  <img src="/screenshot.png" alt="Screenshot" />
+
+### Links
+
+- [Solution URL](https://github.com/AgneBalc/react-typescript--photo-gallery)
+- [Live Site URL](https://photo-gallery-ruddy.vercel.app/)
+
+### Technologies Used
 
 - **React:** The frontend of the application is built using React.
 
@@ -12,7 +21,7 @@ A web application for displaying and searching photos using the Pexels API. It a
 
 - **Intersection Observer:** Intersection Observer is used for lazy loading images as the user scrolls down the page, improving performance.
 
-## Features
+### Features
 
 - **Search Bar:** Users can enter keywords in the search bar to search for photos related to their query.
 
@@ -24,4 +33,23 @@ A web application for displaying and searching photos using the Pexels API. It a
 
 - **Error Handling:** The application handles errors gracefully and displays error messages when API requests fail.
 
+## Running it locally
 
+You must have [Node.js](https://nodejs.org/en) installed on your computer before you can run the project locally.
+Once installed, you can proceed to clone the project:
+
+```
+    git clone https://github.com/AgneBalc/react-typescript--photo-gallery
+```
+
+Then, change the working directory to the cloned project:
+
+```
+    cd react-typescript--photo-gallery
+```
+
+And finally, install the project's dependencies:
+
+```
+    npm install
+```
